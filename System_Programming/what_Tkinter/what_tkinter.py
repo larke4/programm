@@ -15,27 +15,27 @@ def func():
 
 def summ(event):
     func()
-    s = a+b
-    s = str(s)
-    lab['text'] = ' '.join(s)
+    c = a+b
+    c = str(c)
+    lab['text'] = ' '.join(c)
 
-def minus(event):
+def mins(event):
     func()
-    s = a-b
-    s = str(s)
-    lab['text'] = ' '.join(s)
+    c = a-b
+    c = str(c)
+    lab['text'] = ' '.join(c)
 
-def mult(event):
+def unm(event):
     func()
-    s = a*b
-    s = str(s)
-    lab['text'] = ' '.join(s)
+    c = a*b
+    c = str(c)
+    lab['text'] = ' '.join(c)
 
 def div(event):
     func()
-    s = a/b
-    s = str(s)
-    lab['text'] = ' '.join(s)
+    c = a/b
+    c = str(c)
+    lab['text'] = ' '.join(c)
 
 root = Tk()
 
@@ -49,8 +49,8 @@ lab = Label(width=20, bg='black', fg='white')
 
 
 but.bind('<Button-1>', summ)
-but2.bind('<Button-1>', minus)
-but3.bind('<Button-1>', mult)
+but2.bind('<Button-1>', mins)
+but3.bind('<Button-1>', unm)
 but4.bind('<Button-1>', div)
 
 ent.pack()
